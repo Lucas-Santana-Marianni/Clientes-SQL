@@ -1,0 +1,48 @@
+create database Clientes; 
+use Clientes;
+
+create table Clientes (
+id_cliente int auto_increment primary key,
+nome varchar(100) not null,
+idade int,
+email varchar(100) not null,
+cidade varchar(50) not null
+);
+
+insert into Clientes (nome, idade, email, cidade) values
+('Maria Silva', 28, 'maria@gmail.com', 'Florianópolis'),
+('João Souza', 35, 'joao@hotmail.com', 'São Paulo'),
+('Ana Lima', 22, 'ana@gmail.com', 'Rio de Janeiro'),
+('Carlos Mendes', 40, 'carlos@yahoo.com', 'São Paulo'),
+('Julia Rocha', 30, 'julia@gmail.com', 'Curitiba');
+
+/*A*/
+select * from Clientes;
+
+/*B*/
+select nome, idade from Clientes;
+
+/*C*/
+select * from Clientes
+where cidade like 'São%';
+
+/*D*/
+select * from Clientes
+where idade<=25;
+
+/*E*/
+select * from Clientes
+where idade between '30' and '40';
+
+/*F*/
+select * from Clientes 
+order by idade asc;
+
+/*G*/
+select COUNT(*) as total_clientes
+from Clientes;
+
+/*H*/
+SELECT cidade, COUNT(*) AS total_clientes
+FROM clientes
+GROUP BY cidade;
