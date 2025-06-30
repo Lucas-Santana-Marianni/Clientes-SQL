@@ -23,3 +23,14 @@ insert into Clientes (nome, idade, email, cidade) values
 ('Ana Lima', 22, 'ana@gmail.com', 'Rio de Janeiro'),
 ('Carlos Mendes', 40, 'carlos@yahoo.com', 'São Paulo'),
 ('Julia Rocha', 30, 'julia@gmail.com', 'Curitiba');
+
+🔍 Consultas SQL
+Letra	Consulta
+A	select * from Clientes;
+B	select nome, idade from Clientes;
+C	select * from Clientes where cidade like 'São%';
+D	select * from Clientes where idade <= 25;
+E	select * from Clientes where idade between 30 and 40;
+F	select * from Clientes order by idade asc;
+G	select COUNT(*) as total_clientes from Clientes;
+H	select cidade, COUNT(*) as total_clientes from Clientes group by cidade;
