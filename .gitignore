@@ -1,0 +1,20 @@
+# Arquivos de backup e temporários
+*.sql~
+*.tmp
+*.bak
+*.swp
+
+# Arquivos de banco local (MySQL/MariaDB)
+*.log
+*.ibd
+*.frm
+*.myd
+*.myi
+
+# Variáveis de ambiente
+.env
+*.env
+
+# Diretórios de configuração de IDEs
+.vscode/
+.idea/
