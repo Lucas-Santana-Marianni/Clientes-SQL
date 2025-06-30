@@ -32,7 +32,7 @@ where idade<=25;
 
 /*E*/
 select * from Clientes
-where idade between '30' and '40';
+where idade between 30 and 40;
 
 /*F*/
 select * from Clientes 
